@@ -1,0 +1,14 @@
+1) install react-router and make a new route, /hero-detail/{ID}, that will fetch details on each hero as you click on
+them and render those in a new hero-detail component.
+2) install redux and react-redux and start using actions and reducers for state management.
+3) Add a realtime search, with auto-complete suggestions for heroes that lives at the top of the app, regardless of what
+route a user is currently on.  When they choose a hero while searching, then it uses react-router's push(path) method to
+just take them to that hero's detail page.
+4) Install Bootstrap 4 and start styling the outputs to clean up the look and feel.
+
+Extra Credit:
+
+Make another route /heros-comparison/?id1={id}&id2={id} and create a page that will fetch the data and
+show details of two heros on the view, while modifying the styling of the page to highlight differences
+(i.e. green for something higher, or better, red for worse, etc).  Bonus points for NOT duplicating code
+here and making REUSABLE components)
