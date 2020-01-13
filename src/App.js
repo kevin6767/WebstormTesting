@@ -4,7 +4,7 @@ const Heroes = ({heroes , id}) => {
     return (
         <div>
             <h1>Hero List</h1>
-            <select name={heroes} key={id} onChange={event => handleChange(event)}>
+            <select name={heroes} key={id} onChange={this.handleChange} value={this.state.value}>
                 {heroes.map(hero =>
                     <option>{hero.localized_name}
                     </option>
@@ -29,8 +29,11 @@ class App extends React.Component {
         super(props);
         this.state = {
             heroes: [],
-            selectedHero: null
+            selectedHero: null,
+            value: ''
         };
+        this.handleChange = this.handleChange.bind(this);
+
     }
     componentDidMount() {
         let initialHeroes = [];
@@ -49,7 +52,9 @@ class App extends React.Component {
     }
 
 
-    handleChange = selectedHero => this.setState({selectedHero});
+    handleChange(event) {
+        this.setState({value: event.target.value});
+    }
 
     render() {
         const {selectedHero} = this.state;
