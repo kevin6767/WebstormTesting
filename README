@@ -1,14 +1,22 @@
-1) install react-router and make a new route, /hero-detail/{ID}, that will fetch details on each hero as you click on
-them and render those in a new hero-detail component.
-2) install redux and react-redux and start using actions and reducers for state management.
-3) Add a realtime search, with auto-complete suggestions for heroes that lives at the top of the app, regardless of what
-route a user is currently on.  When they choose a hero while searching, then it uses react-router's push(path) method to
-just take them to that hero's detail page.
-4) Install Bootstrap 4 and start styling the outputs to clean up the look and feel.
+Using axios to populate a select element and then based on the choice from the dropdown changes what the page shows.
 
-Extra Credit:
+What I learned
 
-Make another route /heros-comparison/?id1={id}&id2={id} and create a page that will fetch the data and
-show details of two heros on the view, while modifying the styling of the page to highlight differences
-(i.e. green for something higher, or better, red for worse, etc).  Bonus points for NOT duplicating code
-here and making REUSABLE components)
+#######
+I learned that using multiple functions isn't a bad thing. This helped me produce the move_speed by using it from the id
+tag. I also learned how to use useState and useEffect to great success. They are the main components that allow this to
+work.
+
+######
+
+How I would improve this
+
+######
+First of all I would try and implement a way to add more than just move_speed. I want to be able to display more information
+to the page depending on what hero is selected. I might try and use react-router to try and just route up the pages that way.
+Also using a dropdown was probably not the most efficient since I have so many choices. I will more than likely rewrite this
+using a form and just typing in the hero's name that I want to find.
+
+######
+
+Thank you for taking your time to read through this!
